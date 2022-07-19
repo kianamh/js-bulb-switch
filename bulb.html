@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="turnOnLight()">Turn ON</button>
+
+      <div id="bulb"></div>
+
+      <button onclick="visibleModal()">Turn OFF</button>
+    </div>
+
+    <div id="modal">
+      <div class="modal-inner">
+        <p>Are you sure ypu want to turn OFF light?</p>
+        <div>
+          <button onclick="turnOffLight()">YES</button>
+          <button onclick="hideModal()">NO</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
